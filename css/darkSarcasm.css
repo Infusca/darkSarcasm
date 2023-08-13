@@ -1,0 +1,155 @@
+*{
+  color: #595959;
+}
+
+body{
+  background-color: black;
+  font-family: verdana;
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 15px;
+}
+
+.main{
+  margin: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+#darkSarcasm{
+  padding: 50px 0px 0px 0px;
+  text-shadow: -1px -1px 4px white;
+  text-align: center;
+  font-size: 75px;
+}
+
+#nav{
+  text-align: right;
+  font-family: verdana;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0px;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  /* text-align: center; */
+  left: 0px;
+  z-index: 5;
+}
+
+a:hover{
+  text-decoration: line-through;
+  color: #494544;
+}
+
+#dark-description{
+  width: 100%;
+  margin: auto;
+  /* padding: 10px; */
+  font-style: italic;
+  margin-bottom: 100px;
+  text-align: right;
+  position: relative;
+  top: -20px;
+  right: 100px;
+}
+
+#dark-description p{
+  font-size: 12px;
+  text-indent: -20px;
+  /* padding: 0px; */
+}
+
+.form{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#submission{
+  width: 500px;
+  height: 300px;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.break{
+  margin: 50px;
+}
+
+label{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#author{
+  width: 300px;
+}
+
+h1{
+  color: black;
+  text-shadow: 0px 0px 10px white;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+}
+
+.hr-top{
+  width: 100%;
+  color: white;
+  background-color: white;
+}
+
+.hr-bottom{
+  width: 100%;
+  background-color: white;
+  margin-bottom: 150px;
+}
+
+.author{
+  font-size: 12px;
+  color: rgb(110, 110, 110);
+  text-align: center;
+  font-style: italic;
+}
+
+.quote p{
+  color: rgb(163, 163, 163);
+  /* margin-bottom: 150px; */
+  font-style: italic;
+}
+
+.quote span{
+  color: rgb(163, 163, 163);
+  font-style: italic;
+}
+
+a{
+  color: #494544;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.link{
+  text-align: right;
+}
+
+.divide{
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+#footer{
+  font-size: 10px;
+  color: #494544;
+  text-align: center;
+  padding: 100px;
+}
+
+/* SUBPAGES */
+.poem{
+  text-transform: ;
+}

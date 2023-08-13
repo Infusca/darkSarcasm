@@ -1,0 +1,1 @@
+lyricsLink.style.textDecoration = 'line-through';

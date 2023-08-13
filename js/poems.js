@@ -1,0 +1,1 @@
+poemLink.style.textDecoration = 'line-through';

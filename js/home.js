@@ -1,0 +1,1 @@
+homeLink.style.textDecoration = 'line-through';

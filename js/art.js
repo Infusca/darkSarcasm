@@ -1,0 +1,1 @@
+artLink.style.textDecoration = 'line-through';

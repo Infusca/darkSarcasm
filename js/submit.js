@@ -1,0 +1,1 @@
+submitLink.style.textDecoration = 'line-through';

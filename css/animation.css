@@ -1,0 +1,16 @@
+#darkSarcasm{
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-name: dark;
+}
+
+@keyframes dark{
+    from{
+        margin-left: 0px;
+        font-size: 14px;
+    }
+
+    to{
+        marign-left: 100%;
+    }
+}

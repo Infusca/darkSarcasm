@@ -1,0 +1,1 @@
+storiesLink.style.textDecoration = 'line-through';
