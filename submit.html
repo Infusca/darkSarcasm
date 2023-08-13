@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> darkSarcasm </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/darkSarcasm.css">
+  </head>
+
+  <body>
+
+    <div id="nav">
+      <a href="darkSarcasm.html"> home </a>
+      <a href="submit.html"> submit </a>
+      <a href="poems.html"> poems </a>
+      <a href="stories.html"> stories </a>
+      <a href="lyrics.html"> lyrics </a>
+      <a href="art.html"> art </a>
+    </div>
+
+    <div id="darkSarcasm">
+      darkSarcasm.
+    </div>
+
+    <div id="dark-description">
+      <p> A collection of writings, thoughts, art. </p>
+    </div>
+
+    <div class="main">
+        <!-- $_SERVER returns submitted data to page itself instead of file.php -->
+        <form class="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
+          <!-- user selects a category for submission -->
+          <p> Choose a category: </p>
+          <input type="radio" id="thoughts" name="category" value="thoughts">
+          <label for="category">thoughts</label>
+          <input type="radio" id="poems" name="category" value="poems">
+          <label for="category">poems</label>
+          <input type="radio" id="stories" name="category" value="stories">
+          <label for="category">stories</label>
+          <input type="radio" id="lyrics" name="category" value="lyrics">
+          <label for="category">lyrics</label>
+          <p class="break"> </p>
+          
+          <!-- user submission -->
+          <p> Submit a writing: </p>
+          <input type="text" id="submission" name="submission" value="Enter your writing here.">
+          <!-- generate error message if form is not filled out properly -->
+          <span class="error">* <?php echo $name;?></span>
+          <p class="break"> </p>
+          
+          <!-- user name -->
+          <p> Author / Artist name: </p>
+          <input type="text" id="author" name="author" value="Enter name here.">
+          <!-- generate error message if form is not filled out properly -->
+          <span class="error">* <?php echo $submission;?></span>
+          <p class="break"> </p>
+          
+          <!-- submit button -->
+          <input id="submit_button" type="submit" value="submit">
+        </form>        
+
+    </div>
+
+    <div id="footer"> &copy infusca 2021 </div>
+
+    <?php
+      $submission = $author = "";
+
+      function test_input($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return data;
+      }
+
+      if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        if (empty($_POST["submission"])){
+          $name = "name is required";
+        } else {
+          $name = test_input($_POST["submission"]);
+        }
+      }
+
+      if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        if (empty($_POST["name"])){
+          $name = "name is required";
+        } else {
+          $name = test_input($_POST["name"]);
+        }
+      }
+
+      ?>
+
+    <script src="darkSarcasm.js"></script>
+    <script src="js/submit.js"></script>
+
+  </body>
+
+</html>
